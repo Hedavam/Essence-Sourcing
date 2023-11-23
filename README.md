@@ -1,2 +1,2 @@
-# Zaire-s-Website
-Essence Sourcing
+# Essence Sourcing Site
+This was made experimentally and is not complete.
