@@ -1,15 +1,26 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #303030; /* Dark Charcoal for text */
+    background-color: #FFFFFF; /* Pure White background */
     width: 100%;
 }
+
+/* Body Text
+p {
+    font-size: 10px;
+    color: #636363; /* Dark Gray */
+/*} */
+
 /* header styling */
 .header {
-    background-color: #D3A4EE;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    padding: 20px;
     padding: 20px;
     flex:1;
     flex-grow:initial;
@@ -20,20 +31,31 @@ body {
     display: flex;
 }
 
-.header-left {
-    font-size: 28px;
-    color: #E78D84;
+/*TAKE THIS OUT IF YOU GO BACK TO WORDS*/
+.header img.header-left-name {
+    max-width: 400px; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
 }
+
+.header img.header-left-logo {
+    max-width: 70px; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-right: 20px; /* Add some spacing between the logo and the navigation */
+    margin-left: -50px;
+    margin-bottom: 30px;
+}
+
 
 .header-right {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 16px;
 }
 
 .header-right a {
     text-decoration: none;
-    color: grey;
+    color: #707070; /* Medium Gray */
     font-size: 18px;
 }
 
@@ -166,6 +188,38 @@ body {
 }
 
 
+#whatsappicon { 
+    height: 75px;
+}
+
+
+/* Fix for "Medium" Sized Screens - Tablets */ 
+@media only screen and (max-width: 1024px)  {
+    .header {
+        display: flex;
+        flex-direction: inherit;
+    }
+
+    .header-left {
+        display: flex;
+    }
+
+    .header-right-list {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.header-right-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
 /* pagesection1 styling */
 .pagesection1 {
@@ -190,7 +244,7 @@ body {
 }
 
 /* Add a bit of responsiveness for smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .pagesection1img {
         flex: 100%; /* On smaller screens, each column takes up 100% width */
         margin-bottom: 20px; /* Add some space between text and image on smaller screens */
@@ -222,10 +276,17 @@ body {
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Semi-Bold */
     color: #1F2937;
-    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Semi-Bold */
+    color: #a52920;
+    margin-bottom: -1px;
 }
 
 .img-info-pairings {
@@ -235,26 +296,31 @@ h2 {
     gap: 20px;
 }
 
-.img-info-pairing-1,
-.img-info-pairing-2,
-.img-info-pairing-3,
-.img-info-pairing-4 {
+.img-info-pairing-1 {
     width: 100%;
-    max-width: 400px;
-    text-align: center;
+    max-width: 450px;
     border: 1px solid #ddd; /* Add a border around each item */
-    padding: 10px; /* Add padding to separate the border from the content */
+    padding: 25px; /* Add padding to separate the border from the content */
+}
+
+.img-info-pairing-2 {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #ddd; /* Add a border around each item */
+    padding: 25px; /* Add padding to separate the border from the content */
 }
 
 .img-info-pairings p {
-    color: grey;
-    font-size: 18px;
+    color: #343a40;
+    font-size: 16px;
+    text-align: center;
+    word-spacing: 2px;
 }
 
 
 .img-info-pairings img {
     max-width: 100%;
-    height: auto;
+    height: 60px;
 }
 
 /* pagesection3 styling
@@ -325,46 +391,79 @@ h2 {
     border-radius: 8px;
 } */
 
-#ImageTextPairs {
+#Products {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    gap: 75px;
+    padding: 30px;
+    text-align: center;
   }
-  
+
+  .headDescription {
+    display: flex;
+    flex-direction: column;
+  }
+
   .pair {
     display: flex;
-    width: 100%;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  
-  .text {
-    flex: 3; /* Take up 75% of the width */
-    padding-right: 20px; /* Add some space between text and image */
+
+  .pairText {
+    display: flex;
+    flex-direction: column;
+    gap: -20px
   }
-  
-  .image {
-    flex: 1; /* Take up 25% of the width */
-  }
-  
+
+.pair .pairText {
+    color: #343a40;
+    text-align: justify;
+    word-spacing: 2px;
+    flex: .6;
+}
+
+
+.pair img {
+    max-width: 100%;
+    height: 175px;
+    border-radius: 20%;
+}
+
+.pair p {
+    font-size: 18px;
+}
+
+.pagesection2textextra {
+    margin-bottom: -1px;
+}
+
+.productHeaders {
+    color: #a56c20;
+}
+    
+
   /* Add a bit of responsiveness for smaller screens */
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     .pair {
       flex-direction: column; /* Stack pairs vertically on smaller screens */
     }
   
-    .text,
-    .image {
+    .pair p,
+    .pair img {
       flex: 100%; /* On smaller screens, each element takes up 100% width */
       padding-right: 0; /* Remove padding for better responsiveness */
     }
   }
-  
+
 
 /* Align the form on the left under the header */
 #Contact {
     text-align: left;
+    margin-bottom: 20px;
 }
 
 /* Add padding to the left of the contact section for screens larger than 600px */

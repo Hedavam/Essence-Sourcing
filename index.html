@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,10 +22,11 @@
 		<h3 class="mobile-menu-header-left"> Essence Sourcing </h3>
 		<ul class="mobile-menu-header-right">
 			<li><a href="#Home">Home</a></li>
-			<li><a href="#AboutUs">About Us</a></li>
+			<li><a href="#About Us">About Us</a></li>
 			<li><a href="#Services">Services</a></li>
-			<a href="https://wa.me/3058157944"><li>email icon</li></a> <!--link to email--->
-			<a href="https://wa.me/3058157944"><li>whatsapp icon</li></a> <!--make it whatsapp icon-->
+			<li><a href="#Products">Products</a></li>
+			<a href="#Contact"><li>Contact Us</li></a> <!--link to email--->
+			<a href="https://wa.me/15718882531"><li><img src="./images/whatsappicon2.png" alt="WhatsApp Icon"> </li></a> <!--make it whatsapp icon-->
 			<!-- Add more menu items as needed -->
 		</ul>
 	</nav>
@@ -32,17 +34,21 @@
 
     <div class = "pagesection1">
 		<div class="header">
-			<h3 class="header-left"> Essence Sourcing </h3>
-			<nav>
-				<ul class="header-right">
-					<!-- These links are initially hidden on mobile -->
-					<a href="#Home" class="mobile-hidden"><li>Home</li></a>
-					<a href="#About Us" class="mobile-hidden"><li>About Us</li></a>
-					<a href="#Services" class="mobile-hidden"><li>Services</li></a>
-					<a href="https://wa.me/3058157944" class="mobile-hidden"><li>Email icon</li></a>
-					<a href="https://wa.me/3058157944" class="mobile-hidden"><li>WhatsApp icon</li></a>
-				</ul>
-			</nav>
+			<div class = "header-left"> 
+				<img src="./images/Essence Header.png" alt="Essence Sourcing Logo Name" class="header-left-name">
+				<img src = "images/Logo.png" alt = "Essence Sourcing Logo Flower" class = "header-left-logo">
+			</div>
+			<div class="header-right">
+					<ul class = "header-right-list">
+						<!-- These links are initially hidden on mobile -->
+						<a href="#Home" class="mobile-hidden"><li>Home</li></a>
+						<a href="#About Us" class="mobile-hidden"><li>About Us</li></a>
+						<a href="#Services" class="mobile-hidden"><li>Services</li></a>
+						<a href="#Products" class="mobile-hidden"><li>Products</li></a>
+						<a href="#Contact" class="mobile-hidden"><li>Contact Us</li></a>
+						<a href="https://wa.me/15718882531"><li><img src="./images/whatsappicon2.png" alt="WhatsApp Icon" id = "whatsappicon"> </li></a> <!--make it whatsapp icon-->
+					</ul>
+			</div>
 		</div>
         <section id = "Home">
             <div class = "pagesection1content">
@@ -61,12 +67,12 @@
             <h2 class = "pagesection2text">About Us</h2>
             <div class = "img-info-pairings">
                 <div class = "img-info-pairing-1">    
-                    <img src="./images/imgplaceholder.jpeg" alt="Placeholder for image">
-                    <p> his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter </p>
+					<h3> Introduction </h3>
+                    <p> Welcome to Essence Sourcing, your gateway to the authentic flavors of Afghanistan. We're on a mission to enrich the lives of Afghan farmers by connecting them directly to global markets, ensuring they receive fair compensation. Our commitment is to introduce the world to Afghanistan's unique spice offerings, preserving a heritage rooted in quality. Join us on this flavorful journey as we support a more prosperous future for communities in Afghanistan. </p>
                 </div>    
-                <div class = "img-info-pairing-2">    
-                    <img src="./images/imgplaceholder.jpeg" alt="Placeholder for image">
-                    <p>Par. 2</p>
+                <div class = "img-info-pairing-1">
+					<h3> Vision Statement </h3>
+                    <p> Essence Sourcing's vision focuses on enhancing the economic status of Afghan farmers by directly connecting them with global markets for fair compensation and a more prosperous community future. Additionally, we aim to introduce Afghanistan's rich flavors to global kitchens, allowing chefs and food enthusiasts to savor the authentic essence of our carefully harvested spices. Our commitment is to share and preserve Afghanistan's traditional spice story, rooted in quality and heritage, for future generations. </p>
                 </div>    
             </div>
         </div>
@@ -76,17 +82,20 @@
         <div class = "pagesection2">
             <h2 class = "pagesection2text">Services</h2>
             <div class = "img-info-pairings">
-                <div class = "img-info-pairing-1">    
-                    <img src="./images/imgplaceholder.jpeg" alt="Placeholder for image">
-                    <p> his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter his website has subtext. Smaller and lighter </p>
+                <div class = "img-info-pairing-2">    
+                    <img src="./images/service1.png" alt="Placeholder for image">
+					<h3> Direct Sourcing & Exporting </h3>
+                    <p> We pride ourselves on directly sourcing premium Afghan spices and efficiently handling their export to the global market. Our process ensures top-quality products for our clients while supporting Afghan farmers with fair access to international opportunities.</p>
                 </div>    
                 <div class = "img-info-pairing-2">    
-                    <img src="./images/imgplaceholder.jpeg" alt="Placeholder for image">
-                    <p>Par. 2</p>
+                    <img src="./images/service2.png" alt="Placeholder for image">
+					<h3> Custom Spice Blends & Packaging </h3>
+                    <p>Exclusively available to our top customers, we offer bespoke services to create custom spice blends and personalized packaging. Tailored to meet specific culinary and branding needs, these services deliver unique flavor profiles and distinctive packaging designs that resonate with your brand identity.</p>
                 </div>    
-                <div class = "img-info-pairing-3">    
-                    <img src="./images/imgplaceholder.jpeg" alt="Placeholder for image">
-                    <p>Par. 3</p>
+                <div class = "img-info-pairing-2">    
+                    <img src="./images/service3.png" alt="Placeholder for image">
+					<h3> Agricultural Consultation & Support </h3>
+                    <p>Dedicated to the growth and success of our farming partners, we provide agricultural consultation and support, exclusively to our top customers. This includes sharing sustainable farming practices and modern techniques to enhance both yield and quality, fostering a mutually beneficial relationship.</p>
                 </div>    
             </div>
         </div>
@@ -120,76 +129,68 @@
         
     </div> -->
 
-	<section id="ImageTextPairs">
-		<h2>Product Offerings</h2>
+	<section id="Products">
+		<div class = "headDescription">
+			<h2 class = "pagesection2textextra">Products</h2>
+			<p>Our Afghan Spices Collection
+				Delve into the rich flavors of saffron, cardamom, cumin, sesame, and black seed – the essence of Afghan cuisine.</p>
+		</div>
+
 		<div class="pair">
-		  <div class="text">
-			<h3>Pair 1</h3>
-			<p>This is the text for the first pair. It can be as long or short as you need.</p>
-		  </div>
-		  <div class="image">
-			<img src="image1.jpg" alt="Image 1">
-		  </div>
+				<div class = "pairText">
+					<h3 class = "productHeaders">Afghan Treasure: Select Saffron Threads</h3>
+					<p>Discover the luxury of ‘Premium Saffron Threads,’ harvested from Afghanistan's sun-kissed fields. These vivid crimson strands are a culinary gem, perfect for enhancing dishes like paella, risotto, and biryani, as well as teas and desserts. Each thread, carefully handpicked, delivers unparalleled richness and a taste of Afghan heritage.</p>
+				</div>	
+				<img src="images/SaffronThreads.jpg" alt="Saffron Threads">
 		</div>
 	  
 		<div class="pair">
-		  <div class="text">
-			<h3>Pair 2</h3>
-			<p>This is the text for the second pair. It can be as long or short as you need.</p>
-		  </div>
-		  <div class="image">
-			<img src="image2.jpg" alt="Image 2">
-		  </div>
+				<div class = "pairText">
+					<h3 class = "productHeaders">Sesame Duo: Premium Seeds & Pure Oil</h3>
+					<p>Explore the Sesame Duo each available individually. Our sesame seeds, sourced for their rich, nutty flavor, are ideal for enhancing a variety of culinary creations. The pure, refined sesame oil, perfect for dressings and marinades, complements these seeds. Both products, sold separately, represent a commitment to tradition and quality, bringing an exotic touch to your product line.</p>
+				</div>	
+				<img src="images/SesameSeeds.jpg" alt="Sesame Seeds">
 		</div>
 
 		<div class="pair">
-			<div class="text">
-			  <h3>Pair 2</h3>
-			  <p>This is the text for the second pair. It can be as long or short as you need.</p>
-			</div>
-			<div class="image">
-			  <img src="image2.jpg" alt="Image 2">
-			</div>
+			<div class = "pairText">
+				<h3 class = "productHeaders">Black Seed Harmony: Premium Seeds & Pure Oil</h3>
+				<p>Discover our Afghan Black Seed Collection, featuring Premium Seeds and Pure Oil, available for individual purchase. Our black seeds are renowned for their health benefits, making them perfect for nutritional supplements and culinary uses. Additionally, we offer pure, cold-pressed black seed oil, a key component in health and wellness products. While each complements the other, they are sold separately, catering to diverse needs in dietary supplements and unique culinary applications.</p>
+			</div>	
+			<img src="images/BlackSeed.jpg" alt="Black Seeds">
 		</div>
 
 		<div class="pair">
-			<div class="text">
-			  <h3>Pair 2</h3>
-			  <p>This is the text for the second pair. It can be as long or short as you need.</p>
-			</div>
-			<div class="image">
-			  <img src="image2.jpg" alt="Image 2">
-			</div>
+			<div class = "pairText">
+				<h3 class = "productHeaders">Green Gold: Premium Cardamom</h3>
+				<p>Experience ‘Premium Cardamom,’ a testament to Afghanistan's fertile valleys. Each pod offers a unique blend of sweet and spicy notes, enhancing South Asian dishes and global recipes. This cardamom is also prized in specialty beverages and natural health remedies, adding a touch of luxury and heritage to every use​​.</p>
+			</div>	
+			<img src="images/Cardamon.jpg" alt="Cardamon Seeds">
 		</div>
 
 		<div class="pair">
-			<div class="text">
-			  <h3>Pair 2</h3>
-			  <p>This is the text for the second pair. It can be as long or short as you need.</p>
-			</div>
-			<div class="image">
-			  <img src="image2.jpg" alt="Image 2">
-			</div>
+			<div class = "pairText">
+				<h3 class = "productHeaders">Classic Cumin: Authentic Flavor</h3>
+				<p>‘Classic Cumin’ captures the rich, earthy depths of Afghanistan's culinary traditions. Handpicked for flavor and aroma, this cumin is indispensable in a range of global cuisines. Its robust flavors enhance everything from stews to grilled meats, while its health benefits make it a staple in wellness practices​​.</p>
+			</div>	
+			<img src="images/Cumin-Spice.jpg" alt="Cumin Seeds & Powder">
+		</div>
+
+
+		<div class="pair">
+			<div class = "pairText">
+				<h3 class = "productHeaders">Bulk Premium Peanut Oil: Golden Standard</h3>
+				<p>‘Premium Peanut Oil’ is designed for large-scale culinary operations. Extracted from select grade peanuts, it's celebrated for its light, clear texture and nutty flavor. Ideal for high-heat cooking, it's also a perfect base for dressings and marinades, aligning with health-conscious trends in the food service industry​​.</p>
+			</div>	
+			<img src="images/PeanutOil.jpeg" alt="Peanut Oil Seeds & Powder">
 		</div>
 
 		<div class="pair">
-			<div class="text">
-			  <h3>Pair 2</h3>
-			  <p>This is the text for the second pair. It can be as long or short as you need.</p>
-			</div>
-			<div class="image">
-			  <img src="image2.jpg" alt="Image 2">
-			</div>
-		</div>
-
-		<div class="pair">
-			<div class="text">
-			  <h3>Pair 2</h3>
-			  <p>This is the text for the second pair. It can be as long or short as you need.</p>
-			</div>
-			<div class="image">
-			  <img src="image2.jpg" alt="Image 2">
-			</div>
+			<div class = "pairText">
+				<h3 class = "productHeaders">Bulk Premium Walnut Oil: Richly Harvested</h3>
+				<p>‘Premium Walnut Oil’ is crafted for businesses seeking versatile, high-quality oils. Extracted from the finest walnuts, it adds a gourmet touch to a variety of dishes with its deep nutty essence. Valued for its nutritional profile, this oil is ideal for enhancing the taste of baked goods and salads, and is a nutritious choice for food services​​.</p>
+			</div>	
+			<img src="images/WalnutOil.jpeg" alt="Cumin Seeds & Powder">
 		</div>
 	  
 		<!-- Add more pairs as needed -->
