@@ -509,14 +509,13 @@ h3 {
     
 
   /* Add a bit of responsiveness for smaller screens */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     .pair {
       flex-direction: column; /* Stack pairs vertically on smaller screens */
     }
   
     .pair p,
     .pair img {
-      flex: 100%; /* On smaller screens, each element takes up 100% width */
       padding-right: 0; /* Remove padding for better responsiveness */
     }
   }
