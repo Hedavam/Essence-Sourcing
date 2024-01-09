@@ -489,26 +489,19 @@ h3 {
     flex: .6;
 }
 
-
 .pair img {
     height: 175px;
     border-radius: 20%;
 }
 
 .pair p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .pagesection2textextra {
     margin-bottom: -1px;
 }
-
-.productHeaders {
-    text-align: center;
-    color: #a56c20;
-}
     
-
   /* Add a bit of responsiveness for smaller screens */
   @media only screen and (max-width: 900px) {
     .pair {
@@ -519,6 +512,16 @@ h3 {
     .pair img {
       padding-right: 0; /* Remove padding for better responsiveness */
     }
+
+    .productHeaders {
+        text-align: center;
+        color: #a56c20;
+    }
+
+    .pair p {
+        font-size: 14px;
+    }
+
   }
 
 
