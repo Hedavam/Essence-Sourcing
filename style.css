@@ -519,7 +519,7 @@ h3 {
     }
 
     .pair p {
-        font-size: 14px;
+        font-size: 1px;
     }
 
   }
@@ -596,7 +596,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: #e58f84;
     padding: 10px;
     text-align: center;
 }
