@@ -61,7 +61,7 @@ p {
 
 
 
-/* Mobile navigation menu */
+/* Mobile navigation menu  - TODO: Modify logo & icon size for S, M, L screens & for laptops make it one row for header */
 .mobile-menu {
     display: none; /* Hide the menu by default on larger screens */
 }
@@ -83,7 +83,7 @@ p {
     .mobile-menu-icon.active {
         display: block;
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 20px;
         z-index: 1;
     }
@@ -93,9 +93,29 @@ p {
         display: none;
     }
 
+    .mobile-menu-header-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-header-left-name {
+        height: 45px;
+    }
+
     /* Show the mobile menu links when the mobile menu is active */
     .mobile-menu.active .mobile-menu-header-right {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-whatsapp-icon {
+        height: 40px;
+    }
+
+    .mobile-menu-active .header {
+        display: none;
     }
 }
 
@@ -131,6 +151,7 @@ p {
 /* Rotate first and third span to create an 'X' icon */
 .mobile-menu-icon.active span:first-child {
     transform: rotate(-45deg) translate(-5px, 6px);
+    height: 2px;
 }
 
 .mobile-menu-icon.active span:nth-child(2) {
@@ -157,7 +178,7 @@ p {
     .mobile-menu-icon {
         display: block;
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 20px;
         z-index: 1;
     }
@@ -166,9 +187,9 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #D3A4EE;
+        background-color: white;
         right: 0;
-        width: 100%;
+        padding: 20px;
     }
 
     .mobile-menu ul {
@@ -188,13 +209,15 @@ p {
 }
 
 
+
+
 #whatsappicon { 
     height: 75px;
 }
 
 
 /* Fix for "Medium" Sized Screens - Tablets */ 
-@media only screen and (max-width: 1024px)  {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     .header {
         display: flex;
         flex-direction: inherit;
@@ -230,10 +253,11 @@ p {
 
 .pagesection1content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    border-style: hidden;
     align-items: center;
-    gap: 50px;
+    background-color: white;
 }
 
 /* home section */
@@ -252,16 +276,55 @@ p {
 }
 
 .pagesection1text-button {
-    flex: 1;
+    display: flex;
+    padding: 25px;
     text-align: center;
+    max-width: 50%;
 }
 
+/* TODO: change the font to match others */
 .pagesection1content h1 {
-    color: #F9FAF8;
-    font-size: 48px;
+    color: black;
+    font-size: 62px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    margin-bottom: -10px;
 }
+
+/* Mobile device compatability */
+@media only screen and (max-width: 600px) {
+    .pagesection1text-button {
+        display: flex;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .pagesection1content h1 {
+        font-size: 36px;
+    }
+
+    .pagesection1content {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        border-style: hidden;
+        align-items: center;
+        background-color: white;
+    }
+    
+}
+
+/* Compatability with tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .pagesection1content h1 {
+        font-size: 48px;
+    }
+}
+
+.pagesection1img {
+    flex: 1;
+    padding: 25px;
+}
+
 
 .pagesection1img img {
     max-width: 100%;
