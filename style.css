@@ -496,7 +496,7 @@ h3 {
 }
 
 .pair p {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .pagesection2textextra {
@@ -504,6 +504,7 @@ h3 {
 }
 
 .productHeaders {
+    text-align: center;
     color: #a56c20;
 }
     
