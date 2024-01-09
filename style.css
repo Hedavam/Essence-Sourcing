@@ -492,6 +492,7 @@ h3 {
 
 .pair img {
     max-width: 100%;
+    height: 175px;
     border-radius: 20%;
 }
 
@@ -595,4 +596,18 @@ h3 {
     align-items: center;
     color: white;
     padding: 10px;
+    text-align: center;
 }
+
+
+/* footer resizing for mobile */
+@media only screen and (max-width: 600px) {
+    .footer {
+        background-color: #1F2937;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+    }
+}
+
