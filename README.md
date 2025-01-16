@@ -1,1 +1,1 @@
-A quick static site built for a friend's spice company.
+A quick (unfinished) static site built for a friend's spice company.
